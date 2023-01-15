@@ -1,29 +1,34 @@
 package level0;
 
-import java.util.ArrayList;
-
 public class Test27 {
     public static void main(String[] args) {
-        int numer1 = 9;
+        int numer1 = 1;
         int denom1 = 2;
         int numer2 = 1; 
-        int denom2 = 3;
+        int denom2 = 2;
 
-        int numer = numer1*denom2 + numer2*denom1;
-        int denom = denom1 * denom2;
+        int numer;
+        int denom;
 
-        ArrayList<Integer> list = new ArrayList<>();
-
-
-        for(int i = 1 ; i < numer && i < denom ; i++){
-            if(numer % i == 0 && denom % i == 0){
-                list.add(i);
-            }
+        if(denom1 == 2 && denom2 == 2){
+            numer = numer1+numer2;
+            denom = 2;
+        }else{
+            numer = numer1*denom2 + numer2*denom1;
+            denom = denom1 * denom2;
         }
 
-        for(int a : list){
-            numer /= a;
-            denom /= a;
+
+        boolean tmp = true;
+        while(tmp){
+            tmp = false;
+            for(int i = 2 ; i <= numer && i <= denom ; i++){
+                if(numer % i == 0 && denom % i == 0){
+                    numer /= i;
+                    denom /= i;
+                    tmp = true;
+                }
+            }
         }
 
         System.out.println(numer + " " + denom);
