@@ -1,5 +1,7 @@
 package level0;
 
+import java.util.Arrays;
+
 public class Test19 {
     public static void main(String[] args) {
         Test19 test19 = new Test19();
@@ -16,6 +18,7 @@ public class Test19 {
             }
         }
         System.out.println(answer);
+        Arrays.sort(numbers);
         return answer;
     }
 }
