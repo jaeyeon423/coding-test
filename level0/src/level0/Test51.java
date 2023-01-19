@@ -13,10 +13,10 @@ public class Test51 {
             }
             if(d.length() == 0){
                 // System.out.println("dddd");
-                return 1;
+                // return 1;
             }
         }
 
-        return 2;
+        // return 2;
     }
 }
