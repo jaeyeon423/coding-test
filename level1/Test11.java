@@ -11,8 +11,8 @@ public class Test11 {
     public int[][] solution(int[][] arr1, int[][] arr2) {
         int[][] answer = arr1.clone();
 
-        System.out.println(arr1[0].length);
-        System.out.println(arr1.length);
+        // System.out.println(arr1[0].length);
+        // System.out.println(arr1.length);
 
         for(int i = 0 ; i < arr1.length; i++){
             
