@@ -15,14 +15,12 @@ public class Test20 {
         int answer = 0;
         int len = p.length();
 
-
-        for(int i = 0 ; i < t.length() - len + 1 ; i++){
-            String t_word = t.substring(i, i+len);
-            System.out.println(t_word);
-            if(BigInteger.valueOf(t_word) <= Integer.parseInt(p)){
-                answer++;
-            }
+        int sum = 0;
+        int[] arr = {1, 2, 3, 4, 5};
+        for(int i = 0 ; i < 10 ; i++){
+            sum += arr[i];
         }
+        System.out.println(sum);
 
         
 
